@@ -5,7 +5,7 @@ import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 import axios from "axios";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 const Signup = () => {
@@ -18,7 +18,7 @@ const Signup = () => {
     const [pic, setPic] = useState();
     const [loading, setLoading] = useState(false);
     const toast = useToast();
-    const history = useHistory();
+    const history = useNavigate();
 
     const handleClick = () => setShow(!show);
 

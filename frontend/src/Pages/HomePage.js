@@ -11,11 +11,11 @@ import {
 } from "@chakra-ui/react";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const HomePage = () => {
 
-const history = useHistory ();
+const history = useNavigate ();
 
 useEffect (() => {
 const user = JSON.parse(localStorage.getItem("userInfo"));

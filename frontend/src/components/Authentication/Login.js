@@ -4,7 +4,7 @@ import { FormControl, FormLabel } from "@chakra-ui/react";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { useToast}  from "@chakra-ui/react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
@@ -12,7 +12,7 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
+  const history = useNavigate();
   const toast = useToast();
 
   const handleClick = () => setShow(!show);
