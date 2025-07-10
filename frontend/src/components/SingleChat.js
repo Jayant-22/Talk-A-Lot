@@ -2,7 +2,7 @@ import { FormControl } from "@chakra-ui/react";
 import { Box, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { ChatState } from "../Context/ChatProvider";
-import { ArrowBackIcon } from "@chakra-ui/icons";
+import { ArrowBackIcon } from "@chakra-ui/react";
 import { getSender, getSenderFull } from "../config/ChatLogics";
 import ProfileModal from "./miscellaneous/ProfileModal";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";

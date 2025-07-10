@@ -8,23 +8,23 @@ import {
   MenuDivider,
   MenuItem,
   MenuList,
-} from "@chakra-ui/menu";
+} from "@chakra-ui/react";
 import {
   Drawer,
   DrawerBody,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-} from "@chakra-ui/modal";
-import { Tooltip } from "@chakra-ui/tooltip";
-import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
-import { Avatar } from "@chakra-ui/avatar";
+} from "@chakra-ui/react";
+import { Tooltip } from "@chakra-ui/react";
+import { BellIcon, ChevronDownIcon } from "@chakra-ui/react";
+import { Avatar } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import ChatLoading from "../ChatLoading";
-import { Spinner } from "@chakra-ui/spinner";
+import { Spinner } from "@chakra-ui/react";
 import ProfileModal from "./ProfileModal";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
