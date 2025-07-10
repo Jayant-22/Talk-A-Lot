@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { VStack } from "@chakra-ui/react";
-import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { FormControl, FormLabel } from "@chakra-ui/react";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { Button } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
