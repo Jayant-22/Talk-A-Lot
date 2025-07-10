@@ -7,7 +7,7 @@ import {
   TabPanels,
   Tabs,
   Text,
-} from "@chakra-ui/react";
+} from "@chakra-ui/tabs";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
 import { useNavigate } from 'react-router';
