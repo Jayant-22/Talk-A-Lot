@@ -3,7 +3,6 @@ import {
   Container,
   Box,
   Tab,
-  TabList,
   TabPanel,
   TabPanels,
   Tabs,
