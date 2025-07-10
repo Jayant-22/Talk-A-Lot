@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
-import { useDisclosure } from "@chakra-ui/hooks";
-import { Input } from "@chakra-ui/input";
+import { useDisclosure } from "@chakra-ui/reacts";
+import { Input } from "@chakra-ui/react";
 import { Box, Text } from "@chakra-ui/react";
 import {
   Menu,
