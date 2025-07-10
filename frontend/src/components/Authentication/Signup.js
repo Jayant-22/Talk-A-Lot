@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { VStack } from "@chakra-ui/layout";
+import { VStack } from "@chakra-ui/react";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { Button } from "@chakra-ui/button";
