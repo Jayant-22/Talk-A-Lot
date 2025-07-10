@@ -1,8 +1,8 @@
-import { FormControl } from "@chakra-ui/react";
-import { Box, Text } from "@chakra-ui/react";
+import { FormControl } from "@chakra-ui/form-control";
+import { Box, Text } from "@chakra-ui/layout";
 import React, { useEffect, useState } from "react";
 import { ChatState } from "../Context/ChatProvider";
-import { ArrowBackIcon } from "@chakra-ui/react";
+import { ArrowBackIcon } from "@chakra-ui/icons";
 import { getSender, getSenderFull } from "../config/ChatLogics";
 import ProfileModal from "./miscellaneous/ProfileModal";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
@@ -10,7 +10,7 @@ import "./styles.css";
 import {  Spinner, useToast ,Input,IconButton} from "@chakra-ui/react";
 import axios from "axios";
 import ScrollableChat from "./ScrollableChat";
-import Lottie from "lottie-react";
+import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 
 import io from "socket.io-client";

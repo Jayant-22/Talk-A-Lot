@@ -3,18 +3,19 @@ import {
   Container,
   Box,
   Tab,
+  TabList,
   TabPanel,
   TabPanels,
   Tabs,
   Text,
-} from "@chakra-ui/tabs";
+} from "@chakra-ui/react";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
-import { useNavigate } from 'react-router';
+import { useHistory } from 'react-router';
 
 const HomePage = () => {
 
-const history = useNavigate ();
+const history = useHistory ();
 
 useEffect (() => {
 const user = JSON.parse(localStorage.getItem("userInfo"));

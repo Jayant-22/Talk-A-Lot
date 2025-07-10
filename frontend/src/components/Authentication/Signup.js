@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { VStack } from "@chakra-ui/react";
-import { FormControl, FormLabel } from "@chakra-ui/react";
-import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/layout";
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
+import { Button } from "@chakra-ui/button";
 import { useToast } from "@chakra-ui/react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 
 const Signup = () => {
@@ -18,7 +18,7 @@ const Signup = () => {
     const [pic, setPic] = useState();
     const [loading, setLoading] = useState(false);
     const toast = useToast();
-    const history = useNavigate();
+    const history = useHistory();
 
     const handleClick = () => setShow(!show);
 

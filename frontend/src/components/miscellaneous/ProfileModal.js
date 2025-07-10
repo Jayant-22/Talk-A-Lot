@@ -1,4 +1,4 @@
-import { ViewIcon } from "@chakra-ui/react";
+import { ViewIcon } from "@chakra-ui/icons";
 import {
   Modal,
   ModalOverlay,

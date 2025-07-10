@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { VStack } from "@chakra-ui/react";
-import { FormControl, FormLabel } from "@chakra-ui/react";
-import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/layout";
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
+import { Button } from "@chakra-ui/button";
 import { useToast}  from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
@@ -12,7 +12,7 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
-  const history = useNavigate();
+  const history = useHistory();
   const toast = useToast();
 
   const handleClick = () => setShow(!show);

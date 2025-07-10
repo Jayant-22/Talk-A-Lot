@@ -1,30 +1,30 @@
-import { Button } from "@chakra-ui/react";
-import { useDisclosure } from "@chakra-ui/react";
-import { Input } from "@chakra-ui/react";
-import { Box, Text } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/button";
+import { useDisclosure } from "@chakra-ui/hooks";
+import { Input } from "@chakra-ui/input";
+import { Box, Text } from "@chakra-ui/layout";
 import {
   Menu,
   MenuButton,
   MenuDivider,
   MenuItem,
   MenuList,
-} from "@chakra-ui/react";
+} from "@chakra-ui/menu";
 import {
   Drawer,
   DrawerBody,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-} from "@chakra-ui/react";
-import { Tooltip } from "@chakra-ui/react";
-import { BellIcon, ChevronDownIcon } from "@chakra-ui/react";
-import { Avatar } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+} from "@chakra-ui/modal";
+import { Tooltip } from "@chakra-ui/tooltip";
+import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { Avatar } from "@chakra-ui/avatar";
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-import { useToast } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
-import { Spinner } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/spinner";
 import ProfileModal from "./ProfileModal";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
@@ -49,7 +49,7 @@ function SideDrawer() {
 
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const history = useNavigate();
+  const history = useHistory();
 
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
