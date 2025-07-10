@@ -1,5 +1,5 @@
 import { useDisclosure } from '@chakra-ui/hooks';
-import {IconButton, Button} from "@chakra-ui/button";
+import {IconButton, Button} from "@chakra-ui/react";
 import React, { useState } from 'react'
 import { ViewIcon } from '@chakra-ui/icons';
 import {
