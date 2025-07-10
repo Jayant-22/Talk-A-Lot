@@ -10,7 +10,7 @@ import "./styles.css";
 import {  Spinner, useToast ,Input,IconButton} from "@chakra-ui/react";
 import axios from "axios";
 import ScrollableChat from "./ScrollableChat";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../animations/typing.json";
 
 import io from "socket.io-client";
