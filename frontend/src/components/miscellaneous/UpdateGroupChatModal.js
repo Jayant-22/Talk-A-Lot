@@ -1,4 +1,4 @@
-import { useDisclosure } from '@chakra-ui/reacts';
+import { useDisclosure } from '@chakra-ui/react';
 import {IconButton, Button} from "@chakra-ui/react";
 import React, { useState } from 'react'
 import { ViewIcon } from '@chakra-ui/icons';
